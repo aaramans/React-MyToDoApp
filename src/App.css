@@ -1,0 +1,68 @@
+.App {
+  position: relative;
+}
+.App-logo-con{
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.App-logo {
+  pointer-events: none;
+}
+.App-heading-con{
+  text-align: center;
+  padding-top: 10px;
+}
+.App-heading-con h1{
+  margin:0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height:80px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-content{
+  position: relative;
+}
+.App-content .App-clock{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.App-footer {
+  background-color: #282c34;
+  height: 20px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.App-footer p{
+  margin : 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -14,15 +14,15 @@ function TodoForm(props) {
         setInput(e.target.value);
     };
     return (
-        <form className="todoForm" onSubmit={handleSubmit}>
+        <form className="form-inline todoForm" onSubmit={handleSubmit}>
             <input 
                 type="text" 
                 placeholder="Add todo" 
                 name="todotext" 
-                className="todo-input" 
+                className="form-control todo-input" 
                 value={input}
                 onChange={handleChange}/>
-            <button className="todo-button">Add Todo</button>
+            <button className="btn btn-primary todo-button m-2">Add Todo</button>
         </form>
     )
 }

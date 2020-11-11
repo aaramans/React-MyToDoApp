@@ -4,7 +4,7 @@ import TaskList from './taskList.js';
 
 function ContentComp() {
   return (
-    <div className="App-content">
+    <div className="container App-content">
         <Clock text="Time: "/>
         <TaskList/>
     </div>

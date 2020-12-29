@@ -5,8 +5,10 @@ function TodoForm(props) {
     const handleSubmit = e => {
         e.preventDefault();
         props.onSubmit({
-            id : Math.floor(Math.random*10000),
-            taskname : input
+            id : Math.floor(Math.random()*10000),
+            taskName: input,
+            status: 'new',
+            createdTime: new Date().getTime()
         });
         setInput('');
     };
